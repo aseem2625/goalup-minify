@@ -1,0 +1,18 @@
+{
+  "name": "goalup-minify",
+  "version": "1.0.0",
+  "description": "Goalup-minifier simplifies your work to uglify and compress JS, CSS and image files. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "goalup-minify": "./index.js"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.19.0"
+  }
+}
