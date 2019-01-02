@@ -1,0 +1,25 @@
+		* {
+			box-sizing: border-box; /*Comments are removed*/
+		}
+
+		body {
+			color: blue;
+			font-size: 14px;
+			line-height: 1.14em;
+		}		
+
+
+		div {
+			box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.1);
+			color: blue
+		}
+
+		ul {
+			/* Empty css style are also removed*/
+		}
+
+	    input::placeholder {
+	  		color: rgba(0,0,0,0.3)  	
+	    }
+      
+
