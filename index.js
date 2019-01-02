@@ -1,7 +1,5 @@
-#!/usr/bin/env node
-
 var program = require('commander');
-var minify = require('./lib').default;
+var minify = require('./lib');
 
 program
 	.version('1.0.0')
