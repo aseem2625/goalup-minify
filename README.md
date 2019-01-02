@@ -9,9 +9,14 @@ This tool automates compression of js, css, html and image files when no build t
 
 `npm install -g goalup-minify`
 
-#### Command for compressing:
+#### Get Started:
 
 `goalup-minify` // Run in working directory
+
+- **Example:**
+	1. Copy `/examples` directory to some folder
+	2. Run `goalup-minify` inside `/examples`
+	3. `/public` folder is generated with your minified resources.
 
 
 #### Options
@@ -19,7 +24,7 @@ This tool automates compression of js, css, html and image files when no build t
 `goalup-minify --help` to list all the options
 
 
-#### Examples
+#### Example Commands:
 1. Compress only the listed files. `/public` is default output directory.
 
 `goalup-minify -o hello.js index.js world.css`
@@ -33,13 +38,19 @@ This tool automates compression of js, css, html and image files when no build t
 
 `goalup-minify --js ./js_folder --css -x .js_folder/touch_me_not.js .js_folder/touch_me_not.css` 
 
-4. Watch option is generally not required while development, so support will be added when required.
+-----
+
+#### Note:
+`--watch` option is used in development environment where compressing assets is not required. Therefore, it's not part of plan as of now.
 
 
-#### Further ideas:
-- Parse .html files and add file name hashing for linked .js and .css files. (--hashing as option)
-- Add babel support
-- Add support for css preprocessors and auto-prefixers.
-- Add example project for real-life use case
+#### TODO:
+- To handle `--exclude` option.
+- Validate arguments. To not allowing multiple arguments for any option. Also, it cannot be same as the working directory. [[UNSAFE]]
+
+
+#### Further developments:
+- Parse .html files and add file name hashing for linked .js and .css files. (--hashing as option). This helps in browser caching
+- Add babel support for es6+
+- Add support for css preprocessors
 - Add font-icons support
-
