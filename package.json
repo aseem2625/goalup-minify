@@ -1,7 +1,7 @@
 {
   "name": "goalup-minify",
   "version": "1.0.0",
-  "description": "Goalup-minifier simplifies your work to uglify and compress JS, CSS and image files. ",
+  "description": "goalup-minifier simplifies your work to uglify and compress JS, CSS, HTML and IMAGE files. ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
