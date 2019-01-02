@@ -2,6 +2,10 @@
   "name": "goalup-minify",
   "version": "1.0.2",
   "description": "goalup-minifier simplifies your work to uglify and compress JS, CSS, HTML and IMAGE files. ",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/aseem2625/goalup-minify.git"
+  },
   "main": "./dist/index.min.js",
   "scripts": {
     "build": "rollup -c",

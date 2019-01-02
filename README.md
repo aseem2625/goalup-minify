@@ -1,18 +1,25 @@
-# goalup-minify
-This tool automates compression of js, css, html and image files when no build tool is integrated in your project. **(WIP, Work is recently started, so watch out the space if interested)**
+<p align="center">
+  <h2 align="center">goalup-minify</h2>
+  <p align="center">Get Set Deploy! Generate production-ready code for Static websites</p>
+</p>
 
-
-**Note:** This tool is not a bundler. It uses popular tools underneath and automates certain tasks for you to have production-ready `/public`, with no setup. In a nutshell, it simply compresses, and output files individually to `/public` directory. There are more plans related to `goalup`. However, `goalup-minify` will only improve upon the sole objective it serves. This tool is great for static websites.
 
 <br />
 
-### Installation:
+## What is goalup-minify?
+This tool creates Production-ready code in just 1 command. It runs popular tools (gulp, etc.) underneath to compress JS, CSS, HTML and Images. **Note:** *This is not a bundler. In a nutshell, files are individually processed and output to `/public` directory.* `goalup-minify` is purposed for static websites if no bundler / build tool is integrated in your project.
+<br />
+Check **Ongoing** section for more details.
 
-`npm install -g goalup-minify` [To be up and running in few days]
+<br />
 
-### Get Started:
+## Installation:
 
-`goalup-minify` (Options are required. Paths in options are relative to working directory)
+`npm install -g goalup-minify`
+
+## Getting Started:
+
+`goalup-minify` (Options are mandatory)
 
 - **Example:**
 	1. Copy `/examples` directory to some folder
@@ -26,12 +33,14 @@ This tool automates compression of js, css, html and image files when no build t
 
 <br />
 
-### Options:
+## Options:
 
 `goalup-minify --help` to list all the options
 
 
-### Example Commands:
+## Example Commands:
+**Note:** Paths in options are relative to working directory
+
 1. Compress only the listed files. `/public` is default output directory.
 
 `goalup-minify -o hello.js index.js world.css`
@@ -46,7 +55,7 @@ This tool automates compression of js, css, html and image files when no build t
 `goalup-minify --js ./js_folder --css -x .js_folder/touch_me_not.js .js_folder/touch_me_not.css`
 
 
-#### Note:
+### Note:
 `--watch` option is used in development environment where compressing assets is not required. Therefore, it's not part of plan as of now. However, it can be added on request, to achieve completeness and avoid setup of any additional toolchains. This might be required if someone is serving assets from `/public` directory using local server and not `/src`.
 
 <br />
@@ -55,17 +64,22 @@ This tool automates compression of js, css, html and image files when no build t
 
 <br />
 
-### TODO:
+### Ongoing development:
 - To support `--exclude` option.
 - To support `--only` option.
-- Validate arguments. To not allowing multiple arguments for any option. Also, `--dest` cannot be same as the working directory. [[IT'S UNSAFE]]
-- Add rollup to build goalup-min
-- Support es6 in lib for ease of development if complex stuff comes up (Later) :D
+- Validate arguments. To not allowing multiple arguments for any option. Also, `--dest` cannot be same as the working directory. [[CUZ THAT'S UNSAFE]]
+- Add babel support for es6+ [Soon]
+- Add support for css preprocessors [Soon]
+- Add font-icons support [Soon]
 
 <br />
 
-### Further developments:
+### Further plans:
 - Parse .html files and add file name hashing for linked .js and .css files. (--hashing as option). This helps in browser caching
-- Add babel support for es6+
-- Add support for css preprocessors
-- Add font-icons support
+- Configrations for htmlmin, uglifyJS, etc. By default standard and lenient rules would be added, however, custom support can be added on request.
+- Create a boilerplate for static websites using CLI. (Internally would use `goalup-minify` as build too).
+
+<br />
+
+### TODO
+- Support es6 for goalup lib for ease of development (Later) ;)
