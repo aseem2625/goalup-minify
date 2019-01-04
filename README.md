@@ -1,6 +1,7 @@
 <p align="center">
-  <h2 align="center">goalup-minify</h2>
-  <p align="center">Get Set Deploy! Generate production-ready code for Static websites</p>
+  <img width="240px" src="https://user-images.githubusercontent.com/6055628/50710526-41197300-1091-11e9-9a0e-8e7817cc286a.png">
+	
+  <p align="center"><b>Get Set Deploy!</b> Generate production-ready code for Static websites</p>
 </p>
 
 
