@@ -7,7 +7,7 @@ program
 
 program
 	.option('--js [path]', 'Path for js files. Default path is working directory. If option is missing, no .js is processed.')
-	.option('--css [path]', 'Path for css files. Default path is  working directory. If option is missing, no .css is processed.')
+	.option('--style [path]', 'Path for styles files. Default path is  working directory. If option is missing, no style file is processed.')
 	.option('--image <path>', 'Path for image files. Default path is working directory. If option is missing, no images are proccessed')
 	.option('--html [path]', 'Path for html files. Default path is working directory. If option is missing, no .html is processed')
 	.option('-x --exclude <files>', 'List of files to be excluded from the process.')
@@ -16,7 +16,7 @@ program
 	.action(function(args) {
 		minify({
 			js: args.js,
-			css: args.css,
+			style: args.style,
 			html: args.html,
 			image: args.image,
 			exclude: args.exclude,
