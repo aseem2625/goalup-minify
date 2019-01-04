@@ -53,7 +53,7 @@ Check **Ongoing** section for more details.
 
 3. Compress `js` files in the path and all `**/**.css files` . It ignores all the files in excluded list if present in the aforementioned paths.
 
-`goalup-minify --js ./js_folder --css -x .js_folder/touch_me_not.js .js_folder/touch_me_not.css`
+`goalup-minify --js ./js_folder --styles -x .js_folder/touch_me_not.js .js_folder/touch_me_not.css`
 
 
 ### Note:
