@@ -13,5 +13,34 @@ function big_function_name(){
 }
 
 function somename() {
-	fn2();
+	big_function_name();
 }
+
+/* ES6 Features: Arrow function support */
+const es6Feature = () => {
+	console.log('Successfully checks for es6 features');
+}
+
+function HOCFunc(_wrappedClass) {
+	return class extends _wrappedClass {
+		constructor(initStuffs) {
+			super(initStuffs);
+			this.extended_property = 'Wow.. I got it from HOC';
+		}
+	}
+}
+
+/* Decorators support */
+@HOCFunc
+class BabyClass {
+	constructor(initStuffs) {
+		this.secureVar = initStuffs;
+	}
+
+	someMethod(param) {
+		const self = this; // ES6 Features: const are supported
+		console.log('Wow I\'m not Baby anymore. I\'ve HOC power', self);
+	}
+}
+
+new BabyClass().someMethod();

@@ -68,7 +68,6 @@ Check **Ongoing** section for more details.
 - To support `--exclude` option.
 - To support `--only` option.
 - Validate arguments. To not allowing multiple arguments for any option. Also, `--dest` cannot be same as the working directory. [[CUZ THAT'S UNSAFE]]
-- Add babel support for es6+ [Soon]
 - Add support for css preprocessors [Soon]
 - Add font-icons support [Soon]
 
