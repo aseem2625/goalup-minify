@@ -2,7 +2,7 @@ var program = require('commander');
 var minify = require('./lib');
 
 program
-	.version('1.1.0')
+	.version('1.2.0')
 	.description('goalup-minify automates your work of compressing js, css, html and image files when build tool is not integrated in your project.')
 
 program

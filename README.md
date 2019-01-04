@@ -51,7 +51,7 @@ Check **Ongoing** section for more details.
 
 `goalup-minify --js ./js_folder -d ./dist`
 
-3. Compress `js` files in the path and all `**/**.+(css|scss) files` . It ignores all the files in excluded list if present in the aforementioned paths.
+3. Compress `js` files in the path and all `**/**.+(css|scss|stylus) files` . It ignores all the files in excluded list if present in the aforementioned paths.
 
 `goalup-minify --js ./js_folder --style -x .js_folder/touch_me_not.js .js_folder/touch_me_not.css`
 
@@ -69,17 +69,17 @@ Check **Ongoing** section for more details.
 - To support `--exclude` option.
 - To support `--only` option.
 - Validate arguments. To not allowing multiple arguments for any option. Also, `--dest` cannot be same as the working directory. [[CUZ THAT'S UNSAFE]]
-- Add support for css preprocessors [Soon]
-- Add font-icons support [Soon]
+- ~~Add font-icons support~~ ([Read this!](https://www.sarasoueidan.com/blog/icon-fonts-to-svg/))
 
 <br />
 
 ### Further plans:
 - Parse .html files and add file name hashing for linked .js and .css files. (--hashing as option). This helps in browser caching
-- Configrations for htmlmin, uglifyJS, etc. By default standard and lenient rules would be added, however, custom support can be added on request.
-- Create a boilerplate for static websites using CLI. (Internally would use `goalup-minify` as build too).
+- Allow configurations for htmlmin, uglifyJS, etc. By default standard and lenient rules are added, however, custom support can be added on request.
+- Can add lint rules for js and css on request.
+- Create a boilerplate for static websites using CLI. (Internally would use `goalup-minify` as build tool).
 
 <br />
 
 ### TODO
-- Support es6 for goalup lib for ease of development (Later) ;)
+- Support es6 for goalup lib for ease of development (Currently, not required as it's a V. simple tool) ;)
