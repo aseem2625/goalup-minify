@@ -8,7 +8,7 @@ program
 program
 	.option('--js [path]', 'Path for js files. Default path is working directory. If option is missing, no .js is processed.')
 	.option('--style [path]', 'Path for styles files. Default path is  working directory. If option is missing, no style file is processed.')
-	.option('--image <path>', 'Path for image files. Default path is working directory. If option is missing, no images are proccessed')
+	.option('--image <path>', 'Path for image files. Image path is mandatory. If option is missing, no images are proccessed')
 	.option('--html [path]', 'Path for html files. Default path is working directory. If option is missing, no .html is processed')
 	.option('-x --exclude <files>', 'List of files to be excluded from the process.')
 	.option('-o --only <files>', 'Only these files will be compresssed. Used it independent of all above options.')

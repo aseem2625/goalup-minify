@@ -8,7 +8,11 @@
 <br />
 
 ## What is goalup-minify?
-This tool creates Production-ready code in just 1 command. It runs popular tools (gulp, etc.) underneath to compress JS, CSS, HTML and Images. **Note:** *This is not a bundler. In a nutshell, files are individually processed and output to `/public` directory.* `goalup-minify` is purposed for static websites if no bundler / build tool is integrated in your project.
+This tool creates Production-ready code in just 1 command. It runs popular tools (gulp, etc.) underneath to compress JS, CSS, HTML and Images. **Note:** *This is not a bundler. In a nutshell, files are individually processed and output to `/public` directory.* `goalup-minify` is purposed for static websites if no bundler / build tool is integrated in your project. 
+<br />
+<br />
+You can also **inline your compressed assets in html** by passing `inline` attribute to the link, img and script tags.
+<br />
 <br />
 Check **Ongoing** section for more details.
 
@@ -16,11 +20,15 @@ Check **Ongoing** section for more details.
 
 ## Installation:
 
-`npm install -g goalup-minify`
+```
+npm install -g goalup-minify
+```
 
 ## Getting Started:
 
-`goalup-minify` (Options are mandatory)
+```
+goalup-minify [options]
+```
 
 - **Example:**
 	1. Copy `/examples` directory to some folder
